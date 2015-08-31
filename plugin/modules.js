@@ -60,7 +60,7 @@
 
       var known = this.modules[resolved]
       if (known) return known
-
+      
       if (/\.js$|(?:^\/)[^\.]+$/.test(resolved))
         this.server.addFile(resolved, null, parentFile)
       if (!relative) this.nonRelative[name] = resolved
